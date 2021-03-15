@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="File Title"
+        android:padding="10dp"
+        android:background="@drawable/et_decoration"/>
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="File description"
+        android:lines="5"
+        android:padding="10dp"
+        android:background="@drawable/et_decoration"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:id="@+id/btnHistory"
+            android:text="History"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:id="@+id/btnSave"
+            android:text="Save"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>
